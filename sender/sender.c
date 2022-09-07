@@ -13,7 +13,7 @@ int getBatteryChargeRate(void)
 
 void streamSenderInputs(void)
 {
-    for (int iteration = 0; interation < NUM_OF_BATTERY_READINGS; ++interation)
+    for (int iteration = 0; iteration < NUM_OF_BATTERY_READINGS; ++iteration)
     {
         printf("temperature:%d,charge-rate:%d", getBatteryTemperature(), getBatteryChargeRate());
         printf("\n");
