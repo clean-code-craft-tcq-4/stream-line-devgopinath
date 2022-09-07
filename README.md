@@ -61,7 +61,7 @@ This section lists the minimum functionality of the Sender and Receiver.
 ### The Sender
 
 - simulates and sends at least two Battery / Charging parameters
- _**State-of-charge, battery-temperature**_
+  - selected _**State-of-charge, battery-temperature**_
 - sends fifty readings in a stream
 - can either generate values for the parameters, or read from a file
 - uses console output to communicate the parameters.
