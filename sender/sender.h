@@ -6,5 +6,6 @@
 int getBatteryTemperature(void);
 int getBatteryChargeRate(void);
 void streamSenderInputs(void);
+void sendToConsole(const char * msg);
 
 #endif
