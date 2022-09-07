@@ -1,0 +1,17 @@
+name: Sender Build and Run
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: build 
+      run: g++ -Wall -Wextra -Werror -o sender_application sender.c sender_main.c
+
+    - name: run
+      run: ./sender_application

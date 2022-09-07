@@ -1,0 +1,7 @@
+test_sender
+sender_application
+*.gcda
+*.gcno
+*.gcov
+*.info
+*.html
