@@ -8,4 +8,6 @@ int getBatteryChargeRate(void);
 void streamSenderInputs(void);
 void sendToConsole(const char * msg);
 
+extern char senderLog[NUM_OF_BATTERY_READINGS][];
+
 #endif
