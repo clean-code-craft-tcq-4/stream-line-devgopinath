@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "sender.h"
 
-char senderLog[NUM_OF_BATTERY_READINGS][35];
+char senderLog[NUM_OF_BATTERY_READINGS][MAX_LOG_STR_LEN];
 
 int getBatteryTemperature(void)
 {

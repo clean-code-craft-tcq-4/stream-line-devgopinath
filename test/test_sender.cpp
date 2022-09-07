@@ -3,8 +3,16 @@
 #include "catch.hpp"
 #include "./../sender/sender.h"
 
-TEST_CASE("Test")
+#define L_NULL_POINTER ((void *)0)
+
+TEST_CASE("Check output messages")
 {
     streamSenderInputs();
-    REQUIRE(0 == 0);
+    for (int index = 0; index < NUM_OF_BATTERY_READINGS; ++index)
+    {
+        /* "Ensure the battery temperature is printed first" */
+        REQUIRE(0 == strncmp(&senderLog[index][0], "temperature:", 12));
+        /* "Ensure that temperature value is followed with battery charge-rate" */
+        REQUIRE(L_NULL_POINTER != strstr(&senderLog[index][0], ",charge-rate:"));
+    }
 }
