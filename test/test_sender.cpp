@@ -6,5 +6,5 @@
 TEST_CASE("Test")
 {
     streamSenderInputs();
-    REQUIRE(0==0);
+    REQUIRE(0 == 0);
 }
