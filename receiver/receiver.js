@@ -14,12 +14,12 @@ function reading(readings){
         }
         
       });
-    // findMax(temperatureReadings,'Max Temperature');
-    // findMin(temperatureReadings,'Min Temperature');
-    // findMax(chargeRateReadings,'Max ChargeRate');
-    // findMin(chargeRateReadings,'Min ChargeRate');
-    // findAverage(temperatureReadings,'Average Temperature');
-    // findAverage(chargeRateReadings,'Average ChargeRate');
+    findMax(temperatureReadings,'Max Temperature');
+    findMin(temperatureReadings,'Min Temperature');
+    findMax(chargeRateReadings,'Max ChargeRate');
+    findMin(chargeRateReadings,'Min ChargeRate');
+    findAverage(temperatureReadings,'Average Temperature');
+    findAverage(chargeRateReadings,'Average ChargeRate');
     }
 
     function findMax(readings,commandLine){
