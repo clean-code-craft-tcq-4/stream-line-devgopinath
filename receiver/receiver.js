@@ -51,7 +51,7 @@ function reading(readings){
         findMax,
         findMin,
         findAverage,
-        printStatement,
+       // printStatement,
         reading
     };
 
