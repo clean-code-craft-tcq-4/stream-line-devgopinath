@@ -4,24 +4,8 @@ let senderReadings="temperature:36,charge-rate:83,temperature:15,charge-rate:77,
 describe('reading calculation', () => {
   
     it('should exists', () => {
-        expect(sender.reading).to.exist;
+        expect(sender.reading(senderReadings)).to.exist;
     });
-    // it('should return randomValue', () => {
-
-    //     expect(list.length).to.deep.equals(5);
-    // });
-
-    // it('should return temperature Sensor exect value count', () => {
-    //     expect(list.length).to.deep.equals(5);
-    // });
-
-    // it('should return temperature Sensor random value between the min and max value given', () => {
-    //     let minValue = Math.min(...list);
-    //     let maxValue = Math.max(...list);
-    //     expect(minValue).to.be.above(0)
-    //     expect(maxValue).to.be.below(10)
-    // });
-
 });
 
 describe('findAverage', () => {
