@@ -24,7 +24,7 @@ void streamSenderInputs(void)
 {
     for (int iteration = 0; iteration < NUM_OF_BATTERY_READINGS; ++iteration)
     {
-        sprintf(&senderLog[iteration][0], "%d,%d", getBatteryTemperature(), getBatteryChargeRate());
+       sprintf(&senderLog[iteration][0], "temperature:%d,charge-rate:%d,", getBatteryTemperature(), getBatteryChargeRate());
         sendToConsole(&senderLog[iteration][0]);
     }
 }
